@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <title>Lumea Animalelor</title>
+    <style>
+              :root {
+            --primary: #2d5a27; 
+            --accent: #d35400; 
+            --bg: #f8f9fa;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            background-color: var(--bg);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+               header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)); 
+                        
+       background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            border-bottom: 5px solid var(--accent);
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: 1px solid white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: white;
+            color: var;
+        }
+
+      
+        .hero {
+            text-align: center;
+            margin: 40px 0;
+            padding: 40px;
+            background: var(--white);
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .hero img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+
+        .section-title {
+            text-align: center;
+            color: var(--primary);
+            margin: 40px 0 20px;
+            font-size: 2em;
+        }
+
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .cat-card {
+            background: var(--white);
+            padding: 15px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .cat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .cat-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+      
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-bottom: 50px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .gallery img:hover {
+            filter: brightness(80%);
+        }
+
+               .featured-animal {
+            display: flex;
+            background: var(--white);
+            padding: 30px;
+            border-radius: 15px;
+            gap: 30px;
+            align-items: center;
+            border-left: 10px solid var(--accent);
+            margin-bottom: 50px;
+        }
+
+        .featured-animal img {
+            width: 350px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+              .bottom-sections {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .info-box {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .info-box img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+        }
+
+                
+    </style>
+</head>
+<body>
+
+     <header>
+        <div class="container">
+            <h1>LUMEA ANIMALELOR</h1>
+            <p>Descoperă diversitatea fascinantă a naturii sălbatice și domestice</p>
+            <nav>
+                <a href="#">Acasă</a>
+                <a href="#categorii">Categorii principale</a>
+                <a href="#galerie">Galerie</a>
+                <a href="#star">Star</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <section class="hero">
+            <img src="natura.jpg" alt="Natură">
+            <h2>"Explorează lumea fascinantă a animalelor"</h2>
+        </section>
+
+        <h2 id="categorii">CATEGORII PRINCIPALE</h2>
+        <div class="categories">
+            <div class="cat-card">
+                <img src="domestice.jpg" alt="Domestice">
+                <h3>DOMESTICE</h3>
+                <p>Prietenii noștri de zi cu zi.</p>
+            </div>
+            <div class="cat-card">
+                <img src="salbatice.jpg" alt="Sălbatice">
+                <h3>SĂLBATICE</h3>
+                <p>Stăpânii naturii neatinse.</p>
+            </div>
+            <div class="cat-card">
+                <img src="pasari.jpg" alt="Păsări">
+                <h3>PĂSĂRI</h3>
+                <p>Diversitatea culorilor în zbor.</p>
+            </div>
+        </div>
+
+        <h2 id="galerie">GALERIE RAPIDĂ</h2>
+        <div class="gallery">
+            <img src="caine.jpg" alt="Câine">
+            <img src="lup.jpg" alt="Lup">
+            <img src="tigru.jpg" alt="Tigru">
+            <img src="cal.jpg" alt="Cal">
+        </div>
+
+        <h2 id="star">ANIMALUL SĂPTĂMÂNII</h2>
+        <div class="featured-animal">
+	    <img src="leu.jpg" alt="Leu">
+            <div class="featured-content">
+                <h3>Leul - Regele Savanei</h3>
+                <p>Leul (Panthera leo) este unul dintre cele mai emblematice animale din lume. Este singura felină care trăiește în grupuri sociale mari, numite mândrii, și este simbolul puterii de mii de ani.</p>
+                <ul style="list-style: none; padding: 0;">
+                    <li> <strong>Forță:</strong> Unul dintre cei mai puternici prădători.</li>
+                    <li> <strong>Habitat:</strong> Savanele din Africa.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bottom-sections">
+            <div class="info-box">
+                <h3>CURIOZITĂȚI</h3>
+                <img src="panda.jpg" alt="Panda">
+                <p>Ursul Panda petrece aproape 12 ore pe zi mâncând bambus.</p>
+            </div>
+            <div class="info-box">
+                <h3>INFO: CALUL</h3>
+                <ul style="padding-left: 20px;">
+                    <li><strong>Specia:</strong> Equus ferus caballus</li>
+                    <li><strong>Habitat:</strong> Ferme, pășuni deschise</li>
+                    <li><strong>Durată viață:</strong> 25 - 30 ani</li>
+                    <li><strong>Viteză:</strong> Până la 88 km/h</li>
+                </ul>
+                <img src="calul.jpg" alt="Cal Info" style="margin-top:15px">
+            </div>
+        </div>
+
+    </div>
+
+    
+
+</body>
+</html>
